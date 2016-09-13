@@ -1,3 +1,5 @@
+package mccann.kurt.calculator;
+
 /**
  * Created by kurtmccann on 9/11/16.
  */

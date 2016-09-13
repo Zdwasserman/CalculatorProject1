@@ -1,3 +1,5 @@
+package mccann.kurt.calculator;
+
 /**
  * Created by kurtmccann on 9/12/16.
  */
@@ -47,4 +49,41 @@ public class CoreMath
     {
         return a*(-1);
     }
+
+    public static double log(double a)
+    {
+        return Math.log10(a);
+    }
+
+    public static double tenExp(double a)
+    {
+        return Math.pow(10, a);
+    }
+
+    public static double ln(double a)
+    {
+        return Math.log(a);
+    }
+
+    public static double eToTheX(double a)
+    {
+        return Math.exp(a);
+    }
+
+    public static double factorial (double a)
+    {
+        double toReturn = 1;
+        for (double i = 1; i < a ; i++)
+        {
+            toReturn = toReturn * i;
+        }
+        return toReturn;
+    }
+
+    public double bin(double a)
+    {
+        return Double.parseDouble(Long.toBinaryString(Double.doubleToRawLongBits(a)));
+    }
+
+
 }
