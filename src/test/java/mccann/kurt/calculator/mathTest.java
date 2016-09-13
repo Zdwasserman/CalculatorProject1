@@ -3,9 +3,7 @@ package mccann.kurt.calculator;
 import org.junit.Test;
 import static org.junit.Assert.*;
 
-/**
- * Created by zacharywasserman on 9/13/16.
- */
+
 public class mathTest {
     @Test
     public void addTest(){

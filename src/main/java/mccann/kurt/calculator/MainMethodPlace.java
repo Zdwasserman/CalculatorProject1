@@ -3,9 +3,7 @@ package mccann.kurt.calculator;
 import com.sun.tools.doclets.formats.html.SourceToHTMLConverter;
 
 import java.util.Scanner;
-/**
- * Created by kurtmccann on 9/12/16.
- */
+
 public class MainMethodPlace
 {
     public static void main(String[] args)
@@ -14,7 +12,6 @@ public class MainMethodPlace
         boolean isOn = true;
         do{
             c1.executeCommand();
-
             Scanner input = new Scanner(System.in);
             System.out.println("Do you want to continue? y/n?");
             char keepGoing = input.next().charAt(0);

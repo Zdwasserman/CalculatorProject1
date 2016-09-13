@@ -19,12 +19,7 @@ public class Calculator
     double firstNum;                    //The first number put in by the user in a multiple input expression. Ex: The "1" in "1+5"
     String operator;                    //The operator.  Ex: the "+"
 
-//    public void switchUnitsMode(){
 //
-//    }
-//    public void switchUnitsMode(String mode){
-//
-//    }
 
     public void executeCommand()
     {
