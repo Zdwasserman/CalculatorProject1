@@ -22,7 +22,13 @@ public class CoreMath
 
     public static double divide(double first, double second)
     {
+        if(second == 0)
+        {
+            System.out.println("ERROR. You can't divide by 0, and you should know this.");
+            return first;
+        }
         return first / second;
+
     }
 
     public static double square(double first)
@@ -80,9 +86,40 @@ public class CoreMath
         return toReturn;
     }
 
-    public double bin(double a)
+//    public void ToggleDiplayUnits()
+//    {
+//        displayUnitsToggleCounter++;
+//
+//    }
+
+    public void bin(double a)
     {
-        return Double.parseDouble(Long.toBinaryString(Double.doubleToRawLongBits(a)));
+        System.out.println("The current answer value in BINARY form is: " + Integer.toBinaryString((int)Math.round(a)));
+    }
+
+    public void oct(double a)
+    {
+        System.out.println("The current answer value in OCTAL form is: " + Integer.toOctalString((int)Math.round(a)));
+    }
+
+    public void hex(double a)
+    {
+        System.out.println("The current answer value in HEXIDECIMAL form is: " + Integer.toHexString((int)Math.round(a)));
+    }
+
+    public void dec(double a)
+    {
+        System.out.println("The current answer value in DECIMAL for is: " + a);
+    }
+
+    public double cbrt(double a)
+    {
+        return Math.cbrt(a);
+    }
+
+    public double avg(double a , double b)
+    {
+        return ((a+b)/2);
     }
 
 

@@ -7,11 +7,13 @@ public class Calculator
 {
     Boolean firstCycle = true; //This is only true if calc has just been turned on, or has just been cleared.  Will cause calculator to request 1st argument rather that setting to display value.
     Double answer;
-    Double memory;
+    Double memory = 0.0;
     boolean radians = false;
     Input userInput = new Input();
     CoreMath math = new CoreMath();
     TrigFunctions tMath = new TrigFunctions();
+
+
 //    ; //This defines the type of input that is being accepted at this time: firstNum, Operator, or secondNum;
 //
     double firstNum;                    //The first number put in by the user in a multiple input expression. Ex: The "1" in "1+5"
@@ -49,7 +51,8 @@ public class Calculator
            case "exp" : answer = math.exponent(firstNum, userInput.readNumber()); break;
 
            case "switchUnitsMode" : answer = tMath.toggleRadsDeg(answer, radians); break;
-
+           case "rad" : if(radians){System.out.println("Already in radians!")}; else{answer = tMath.toggleRadsDeg(answer, radians)};
+           case "deg" : if(!radians){System.out.println("Already in degrees!")}; else{answer = tMath.toggleRadsDeg(answer, radians)};
 
            case "sin" : answer = tMath.sin(firstNum, radians); break; //convert
            case "cos" : answer = tMath.cos(firstNum, radians); break; //convert
@@ -66,24 +69,31 @@ public class Calculator
            case "factorial" : answer = math.factorial(firstNum); break;
 
            case "clear" : answer = 0.0 ; firstCycle = true; break;
-           case "bin" : answer = math.bin(firstNum); break;
 
            case "^-1" : answer = math.inverse(firstNum); break;
            case "inv" : answer = math.invert(firstNum); break;
 
-//           case "oct" : answer = math.oct(firstNum); break;
-//           case "dec" : answer = math.dex(firstNum); break;
-//           case "hex" : answer = math.hex(firstNum); break;
+//           case "ToggleDiplayUnits" : math.toggleDisplayUnits(firstNum); break;
+           case "bin" : math.bin(firstNum); break;
+           case "oct" : math.oct(firstNum); break;
+           case "hex" : math.hex(firstNum); break;
+           case "dec" : math.dec(firstNum); break;
 
-           case "M+" : memory = answer; break;
+           case "cbrt" : math.cbrt(firstNum); break;
+           case "avg" : math.avg(firstNum, userInput.readNumber()); break;
+
+           case "M+" : memory = answer; System.out.println("The memory has been updated, and now contains: " + memory); break;
            case "MC" : memory = 0.0; break;
-           case "MRC" : answer = memory; break;
+           case "MRC" : answer = memory; System.out.println("The memory contains: " + memory); break;
            default: System.out.println("Invalid operator."); break;
 
 
 
        }
         System.out.println("State: " + answer);
+
+//        int displayUnitsToggleCounter = 0;
+
     }
 
 
