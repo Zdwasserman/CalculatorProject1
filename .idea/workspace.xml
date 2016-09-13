@@ -1,25 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="a7ca04d9-b572-4f4e-b7ba-df9dd6262367" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/mccann/kurt/calculator/Input.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/mccann/kurt/calculator/MainMethodPlace.java" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/Input.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/MainMethodPlace.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/Memory.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/Calculator.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/CoreMath.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/Display.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/Input.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/MainMethodPlace.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/Memory.class" afterPath="" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/Calculator.java" afterPath="$PROJECT_DIR$/src/main/java/mccann/kurt/calculator/Calculator.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/CoreMath.java" afterPath="$PROJECT_DIR$/src/main/java/mccann/kurt/calculator/CoreMath.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/Display.java" afterPath="$PROJECT_DIR$/src/main/java/mccann/kurt/calculator/Display.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/TrigFunctions.java" afterPath="$PROJECT_DIR$/src/main/java/mccann/kurt/calculator/TrigFunctions.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/test/java/CalculatorTest.java" afterPath="$PROJECT_DIR$/src/test/java/mccann/kurt/calculator/CalculatorTest.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-    </list>
+    <list default="true" id="a7ca04d9-b572-4f4e-b7ba-df9dd6262367" name="Default" comment="" />
     <ignored path="Calculator1.iws" />
     <ignored path=".idea/workspace.xml" />
     <ignored path="$PROJECT_DIR$/out/" />
@@ -44,8 +26,8 @@
       <file leaf-file-name="Calculator.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/mccann/kurt/calculator/Calculator.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="345">
-              <caret line="79" column="39" selection-start-line="79" selection-start-column="39" selection-end-line="79" selection-end-column="39" />
+            <state relative-caret-position="135">
+              <caret line="9" column="17" selection-start-line="9" selection-start-column="17" selection-end-line="9" selection-end-column="17" />
               <folding />
             </state>
           </provider>
@@ -182,11 +164,11 @@
         <option value="$PROJECT_DIR$/src/main/java/TrigFunctions.java" />
         <option value="$PROJECT_DIR$/src/main/java/Input.java" />
         <option value="$PROJECT_DIR$/src/main/java/Calculator.java" />
-        <option value="$PROJECT_DIR$/src/main/java/mccann/kurt/calculator/Calculator.java" />
         <option value="$PROJECT_DIR$/src/main/java/mccann/kurt/calculator/CoreMath.java" />
         <option value="$PROJECT_DIR$/src/main/java/mccann/kurt/calculator/MainMethodPlace.java" />
         <option value="$PROJECT_DIR$/src/main/java/mccann/kurt/calculator/TrigFunctions.java" />
         <option value="$PROJECT_DIR$/src/test/java/mccann/kurt/calculator/CalculatorTest.java" />
+        <option value="$PROJECT_DIR$/src/main/java/mccann/kurt/calculator/Calculator.java" />
       </list>
     </option>
   </component>
@@ -843,12 +825,12 @@
       <updated>1473634938192</updated>
       <workItem from="1473634941984" duration="9076000" />
       <workItem from="1473689145435" duration="200000" />
-      <workItem from="1473689948879" duration="34650000" />
+      <workItem from="1473689948879" duration="34798000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="43926000" />
+    <option name="totallyTimeSpent" value="44074000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -1159,8 +1141,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/mccann/kurt/calculator/Calculator.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="345">
-          <caret line="79" column="39" selection-start-line="79" selection-start-column="39" selection-end-line="79" selection-end-column="39" />
+        <state relative-caret-position="135">
+          <caret line="9" column="17" selection-start-line="9" selection-start-column="17" selection-end-line="9" selection-end-column="17" />
           <folding />
         </state>
       </provider>
