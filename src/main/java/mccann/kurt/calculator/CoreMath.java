@@ -79,7 +79,7 @@ public class CoreMath
     public static double factorial (double a)
     {
         double toReturn = 1;
-        for (double i = 1; i < a ; i++)
+        for (double i = 1; i <= a ; i++)
         {
             toReturn = toReturn * i;
         }

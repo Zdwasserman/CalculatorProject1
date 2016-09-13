@@ -63,14 +63,7 @@ public class TrigFunctions
         }
     }
 
-//    public void switchUnitsMode()
-//    {
-//        if(this.unitsMode.equals("degrees"))
-//        {
-//            this.unitsMode = "radians";
-//        }
-//
-//    }
+
 
 
 

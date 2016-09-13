@@ -23,12 +23,6 @@ public class MainMethodPlace
             }
         }while(isOn == true);
         System.out.println("Sayonara!");
-//        Calculator c;
-//        Calculator c1 = new Calculator();
-//        c1.setFirstNum(22);
-//        c1.setSecondNum(2);
-//        c1.setOperator("-");
-//        double answer = c1.executeOperation();
-//        System.out.println(answer);
+
     }
 }
