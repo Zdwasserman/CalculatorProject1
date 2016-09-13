@@ -86,11 +86,19 @@ public class CoreMath
         return toReturn;
     }
 
-//    public void ToggleDiplayUnits()
-//    {
-//        displayUnitsToggleCounter++;
-//
-//    }
+    public int toggleDisplayUnits(double a , int counter)
+    {
+        counter++;
+        switch (counter)
+        {
+            case 1: bin(a); break;
+            case 2: oct(a); break;
+            case 3: hex(a); break;
+            case 4: dec(a); break;
+            case 5: counter = 0; break;
+        }
+        return counter;
+    }
 
     public void bin(double a)
     {

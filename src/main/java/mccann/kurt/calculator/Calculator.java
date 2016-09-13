@@ -12,7 +12,7 @@ public class Calculator
     Input userInput = new Input();
     CoreMath math = new CoreMath();
     TrigFunctions tMath = new TrigFunctions();
-
+    int displayUnitsToggleCounter = 0;
 
 //    ; //This defines the type of input that is being accepted at this time: firstNum, Operator, or secondNum;
 //
@@ -48,11 +48,19 @@ public class Calculator
            case "/" : answer = math.divide(firstNum, userInput.readNumber()); break;
            case "^2" : answer = math.square(firstNum); break;
            case "sqrt" : answer = math.squareroot(firstNum); break;
-           case "exp" : answer = math.exponent(firstNum, userInput.readNumber()); break;
+           case "exp" : answer = math.exponent(firstNum, userInput.readNumber());
+               break;
 
-           case "switchUnitsMode" : answer = tMath.toggleRadsDeg(answer, radians); break;
-           case "rad" : if(radians){System.out.println("Already in radians!")}; else{answer = tMath.toggleRadsDeg(answer, radians)};
-           case "deg" : if(!radians){System.out.println("Already in degrees!")}; else{answer = tMath.toggleRadsDeg(answer, radians)};
+           case "switchUnitsMode" : answer = tMath.toggleRadsDeg(answer, radians);
+               break;
+           case "rad" :
+               if(radians){
+                   System.out.println("Already in radians!");
+               }
+           else{
+               answer = tMath.toggleRadsDeg(answer, radians);
+           }
+           case "deg" : if(!radians){System.out.println("Already in degrees!");} else{answer = tMath.toggleRadsDeg(answer, radians);}
 
            case "sin" : answer = tMath.sin(firstNum, radians); break; //convert
            case "cos" : answer = tMath.cos(firstNum, radians); break; //convert
@@ -73,7 +81,7 @@ public class Calculator
            case "^-1" : answer = math.inverse(firstNum); break;
            case "inv" : answer = math.invert(firstNum); break;
 
-//           case "ToggleDiplayUnits" : math.toggleDisplayUnits(firstNum); break;
+           case "ToggleDisplayUnits" : displayUnitsToggleCounter = math.toggleDisplayUnits(firstNum, displayUnitsToggleCounter); break;
            case "bin" : math.bin(firstNum); break;
            case "oct" : math.oct(firstNum); break;
            case "hex" : math.hex(firstNum); break;
@@ -86,14 +94,8 @@ public class Calculator
            case "MC" : memory = 0.0; break;
            case "MRC" : answer = memory; System.out.println("The memory contains: " + memory); break;
            default: System.out.println("Invalid operator."); break;
-
-
-
        }
         System.out.println("State: " + answer);
-
-//        int displayUnitsToggleCounter = 0;
-
     }
 
 
